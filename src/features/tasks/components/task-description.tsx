@@ -31,7 +31,7 @@ export const TaskDescription = ({ task }: TaskDescriptionProps) => {
     <div className="p-4 border rounded-lg">
       <div className="flex items-center justify-between">
         <p className="text-lg font-semibold">
-          Overview
+        Description
         </p>
         <Button onClick={() => setIsEditing((prev) => !prev)} size={"sm"} variant={"secondary"}>
           {isEditing ? (
@@ -53,7 +53,7 @@ export const TaskDescription = ({ task }: TaskDescriptionProps) => {
         </div>
 
       ) : (
-        <div>d
+        <div>
           {task.description || (
             <span className="text-muted-foreground">No description set</span>
           )}
