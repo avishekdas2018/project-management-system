@@ -53,9 +53,9 @@ export const TaskDescription = ({ task }: TaskDescriptionProps) => {
         </div>
 
       ) : (
-        <div>
+        <div className="break-words">
           {task.description || (
-            <span className="text-muted-foreground">No description set</span>
+            <p className="text-muted-foreground">No description set</p>
           )}
         </div>
 
